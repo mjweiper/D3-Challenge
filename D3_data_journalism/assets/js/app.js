@@ -87,7 +87,7 @@ svg.append("g")
     .enter()
     .append("text")
         .attr("dx", function (d) { return x(d.poverty); } )
-        .attr("dy", function (d) { return (y(d.healthcare))})
+        .attr("dy", function (d) { return (y(d.healthcare) + 4)})
         .text(function (d) { return d.abbr} )
         .classed("stateText", true)
 
